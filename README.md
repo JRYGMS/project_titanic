@@ -1,4 +1,4 @@
-1. **Pipeline ETL & Modelowanie ('etl_train.py'):**
+a1.  jak**Pipeline ETL & Modelowanie ('etl_train.py'):**
   - **Czyszczenie Danych:** Imputacja brakujących wartości wieku (mediana) oraz portu zaokrętowania.
   - -**Feature Engineering:** Kodowanie zmiennych kategorycznych ('Sex_Encoded') oraz wyliczanie wielkości rodziny ('FamilySize = SibSp + Parch + 1').
   - --**Baza danych:** Zapis przetworzonego zbioru danych do realcyjnej bazy SQLite('titanic.db') do tabeli 'passengers'.
@@ -15,6 +15,8 @@
 Niezbędnym jest, aby w folderze projektu znajdował się plik 'train.csv'
 
 Instalacja niezbędnych pakietów
-'''bash
-pip install -r requrements.txt
+
+```bash
+python3 etl_train.py
+python3 -m streamlit run app.py
 
