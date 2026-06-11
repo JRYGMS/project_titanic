@@ -17,6 +17,16 @@ Niezbędnym jest, aby w folderze projektu znajdował się plik 'train.csv'
 Instalacja niezbędnych pakietów
 
 ```bash
-python3 etl_train.py
-python3 -m streamlit run app.py
+pip install -r requirements.txt
+```
 
+## 2. Uruchomienie potoku ETL i treningu modelu
+Przed włączeniem interfejsu należy zbudować bazę danych i wygenerować zoptymalizowany plik modelu:
+
+```bash
+python etl_train.py
+```
+
+## 3. Uruchomienie aplikacji Streamlit
+```bash
+python3 -m streamlit run app.py
